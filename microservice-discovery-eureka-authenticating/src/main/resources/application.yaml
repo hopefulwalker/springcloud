@@ -15,3 +15,10 @@ spring:
     inetutils:
       ignored-interfaces:
         - .*Virtual.*
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password123
+
