@@ -22,5 +22,4 @@ public class MovieController {
     public User findById(@PathVariable Long id) {
         return this.userFeignClient.findById(id);
     }
-
 }
