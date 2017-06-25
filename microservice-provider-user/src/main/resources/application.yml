@@ -9,6 +9,10 @@ eureka:
 spring:
   application:
     name: microservice-provider-user
+  cloud:
+    inetutils:
+      ignored-interfaces:
+        - .*Virtual.*
   jpa:
     generate-ddl: false
     show-sql: true

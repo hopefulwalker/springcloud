@@ -1,0 +1,40 @@
+[{
+    "host": "192.168.12.113",
+    "port": 8060,
+    "metadata": {},
+    "serviceId": "MICROSERVICE-SIDECAR-NODE-SERVICE",
+    "uri": "http://192.168.12.113:8060",
+    "secure": false,
+    "instanceInfo": {
+        "instanceId": "localhost:microservice-sidecar-node-service:8070",
+        "app": "MICROSERVICE-SIDECAR-NODE-SERVICE",
+        "appGroupName": null,
+        "ipAddr": "192.168.12.113",
+        "sid": "na",
+        "homePageUrl": "http://WalkerPCI57500:8060/",
+        "statusPageUrl": "http://WalkerPCI57500:8070/info",
+        "healthCheckUrl": "http://WalkerPCI57500:8070/health",
+        "secureHealthCheckUrl": null,
+        "vipAddress": "microservice-sidecar-node-service",
+        "secureVipAddress": "microservice-sidecar-node-service",
+        "countryId": 1,
+        "dataCenterInfo": {"@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo", "name": "MyOwn"},
+        "hostName": "192.168.12.113",
+        "status": "UP",
+        "leaseInfo": {
+        "renewalIntervalInSecs": 30,
+        "durationInSecs": 90,
+        "registrationTimestamp": 1498291811329,
+        "lastRenewalTimestamp": 1498291811329,
+        "evictionTimestamp": 0,
+        "serviceUpTimestamp": 1498283325103
+    },
+    "isCoordinatingDiscoveryServer": false,
+    "metadata": {},
+    "lastUpdatedTimestamp": 1498291811329,
+    "lastDirtyTimestamp": 1498291810750,
+    "actionType": "ADDED",
+    "asgName": null,
+    "overriddenStatus": "UNKNOWN"
+}
+}]

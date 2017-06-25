@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    inetutils:
+      ignored-interfaces:
+        - .*Virtual.*
+    config:
+      server:
+        git:
+          uri: https://git.oschina.net/hopefulwalker/spring-cloud-config-repo
+          clone-on-start: true
+logging:
+  level:
+    org.springframework.cloud: DEBUG
+    org.springframework.boot: DEBUG
+encrypt:
+  key-store:
+    location: classpath:/server.jks
+    password: letmein
+    alias: mytestkey
+    secret: changeme

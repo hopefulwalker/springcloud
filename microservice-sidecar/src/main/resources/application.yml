@@ -1,8 +1,8 @@
 server:
-  port: 8040
+  port: 8070
 spring:
   application:
-    name: microservice-gateway-zuul
+    name: microservice-sidecar-node-service
   cloud:
     inetutils:
       ignored-interfaces:
@@ -16,3 +16,6 @@ eureka:
 management:
   security:
     enabled: false
+sidecar:
+  port: 8060
+  health-uri: http://192.168.12.113:8060/health.json
