@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: microservice-config-server-eureka
+    name: microservice-config-server
   cloud:
     inetutils:
       ignored-interfaces:
@@ -12,9 +12,15 @@ spring:
         git:
           uri: https://git.oschina.net/hopefulwalker/spring-cloud-config-repo
           clone-on-start: true
+logging:
+  level:
+    org.springframework.cloud: DEBUG
+    org.springframework.boot: DEBUG
 encrypt:
   key: walker
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password123
